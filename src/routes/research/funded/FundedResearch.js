@@ -9,7 +9,9 @@ const FundedResearch = () => {
   }, []);
   return (
     <div className="container">
-      <Title text="Funded Research Projects" />
+      <div style={{ textAlign: "center" }}>
+        <Title text="Funded Research Projects" />
+      </div>
       <div className="table-responsive">
         <table className="table table-striped table-bordered table-hover">
           <thead className="table-dark">
@@ -20,6 +22,7 @@ const FundedResearch = () => {
               <th>Sponsoring Agency</th>
               <th>Duration</th>
               <th>Year of completion</th>
+              <th>Sanctioned Amount</th>
             </tr>
           </thead>
           <tbody>
@@ -32,6 +35,11 @@ const FundedResearch = () => {
                   <td>{item.sponsoringAgency}</td>
                   <td>{item.duration}</td>
                   <td>{item.yearOfCompletion}</td>
+                  <td>
+                    {item.sanctionedAmount
+                      ? "Rs. " + item.sanctionedAmount
+                      : "N/A"}
+                  </td>
                 </tr>
               );
             })}
