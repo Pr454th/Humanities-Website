@@ -16,6 +16,7 @@ const data = [
     areaOfInterest:
       "Stylistics, Applied Linguistics, Language through Literature",
     image: "/static/images/faculty/teaching/english/lourdesJoavani.JPG",
+    academicaLink: "https://www.auegov.ac.in/HomePage?Auth=wbtyQ04=",
   },
   {
     name: "Dr. A. R. S. Jayanth",
